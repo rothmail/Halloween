@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fantasma, Abóbora, Caldeirão</title>
+</head>
+
+<body>
+    <header>
+        <h2>Fantasma, Abóbora, Caldeirão</h2>
+        <p>Escolha sua jogada</p>
+    </header>
+
+    <main>
+        <section>
+            <!-- IMAGEM INICIAL -->
+            <img id="escolhaUsuario" src="Jogo.jpg" alt="Escolha usuario" style="transform: scaleX(-1)">
+            <img id="escolhaInimigo" src="Jogo.jpg" alt="Escolha inimigo">
+            <br>
+            <!-- BOTÕES DE ESCOLHA -->
+            <button onclick="jogo('fantasma')">Fantasma</button>
+            <button onclick="jogo('caldeirão')">Caldeirão</button>
+            <button onclick="jogo('abóbora')">Abóbora</button>
+            <button id="hack">Hack</button>
+        </section>
+    </main>
+    <footer>
+        <!-- RESULTADO -->
+        <p id="resultado"></p>
+
+        <!-- PONTOS -->
+        <p id="pontosUsuario" class="Jogador">Usuario: 0</p>
+        <p id="pontosInimigo" class="Adversário">Inimigo: 0</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
